@@ -61,7 +61,7 @@ class Game:
         else:
             self.velocity_move = 7
         
-        animations = [self.animation.animation_basic_skin, self.animation.animation_rainbow_skin, self.animation.animation_batman_skin, self.animation.animation_launcher_skin, self.animation.animation_flash_skin, self.animation.animation_super_skin]
+        animations = [self.animation.animation_basic_skin, self.animation.animation_batman_skin, self.animation.animation_launcher_skin, self.animation.animation_flash_skin, self.animation.animation_super_skin]
         
         animations[self.character]()
 

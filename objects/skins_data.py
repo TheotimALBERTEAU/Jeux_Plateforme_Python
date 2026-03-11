@@ -20,10 +20,7 @@ flash_skin_rect = flash_skin.get_rect(center = (640, 360))
 super_skin = pygame.transform.scale(pygame.image.load('assets/skins/super_skin_unlock.jpg'), (200, 160))
 super_skin_rect = super_skin.get_rect(center = (640, 360))
 
-rainbow_skin = pygame.transform.scale(pygame.image.load('assets/skins/rainbow_skin_unlock.jpg'), (200, 160))
-rainbow_skin_rect = rainbow_skin.get_rect(center = (640, 360))
-
-max_skins = 5
+max_skins = 4
 
 basic_skin = {'name' : basic_skin,
               'skin' : 'assets/skins/basic_skin.jpg',
@@ -67,9 +64,8 @@ super_skin = {'name' : super_skin,
 
 skins = {
     0 : basic_skin,
-    1 : rainbow_skin,
-    2 : batman_skin,
-    3 : launcher_skin,
-    4 : flash_skin,
-    5 : super_skin,
+    1 : batman_skin,
+    2 : launcher_skin,
+    3 : flash_skin,
+    4 : super_skin,
 }
