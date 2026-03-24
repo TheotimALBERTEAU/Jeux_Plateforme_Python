@@ -44,19 +44,15 @@ class Player(pygame.sprite.Sprite):
 
     def move_right(self):
         # deplacement de joueur vers la droite
-        if self.game.character == 4 or self.game.character == 5:
+        if self.game.character == 3 or self.game.character == 4:
             self.rect.x += self.velocity * 2
-        elif self.game.character == 1:
-            self.rect.x += self.velocity / 3
         else:
             self.rect.x += self.velocity
 
     def move_left(self):
         # deplacement du joueur vers la gauche
-        if self.game.character == 4 or self.game.character == 5:
+        if self.game.character == 3 or self.game.character == 4:
             self.rect.x -= self.velocity * 2
-        elif self.game.character == 1:
-            self.rect.x -= self.velocity / 7
         else:
             self.rect.x -= self.velocity
 
@@ -65,9 +61,7 @@ class Player(pygame.sprite.Sprite):
         self.all_projectiles.add(self.projectile)
 
     def jump(self):
-        # affecte valeur True pour pouvoir jump
-        if not self.game.character == 1:
-            self.jumping = True
+        self.jumping = True
 
     def reload_money(self):
         self.money_surface = self.font.render(f'money : {self.money}', True, (255, 107, 0))

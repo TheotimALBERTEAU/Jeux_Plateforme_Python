@@ -59,7 +59,7 @@ super_skin = {'name' : super_skin,
               'character' : "Nobody know what is this capybara.",
               'power' : "But rumors say he's the stronger and better capybara",
               'price' : '???',
-              'unlock' : '0'
+              'unlock' : '1'
              }
 
 skins = {
